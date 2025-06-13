@@ -1,14 +1,14 @@
 from sqlalchemy import ForeignKey
+from extensiones import db, ma
 
-import app
 
 
-class Actividades(app.db.Model):
-    actividadID = app.db.Column(app.db.Integer, primary_key=True)
-    actividad = app.db.Column(app.db.String(100))
-    responsableID = app.db.Column(app.db.Integer, ForeignKey('usuarios.id'))
-    dias = app.db.Column(app.db.String(100))
-    horario = app.db.Column(app.db.String(100))
-    asistentesMax = app.db.Column(app.db.Integer)
-    responsable = app.db.relationship("Usuarios", primaryjoin="and_(Actividades.responsableID==Usuarios.id) ")
-    clases = app.db.relationship('Clases', passive_deletes=True)
+class Actividades(db.Model):
+    actividadID = db.Column(db.Integer, primary_key=True)
+    actividad = db.Column(db.String(100))
+    responsableID = db.Column(db.Integer, ForeignKey('usuarios.id'))
+    dias = db.Column(db.String(100))
+    horario = db.Column(db.String(100))
+    asistentesMax = db.Column(db.Integer)
+    responsable = db.relationship("Usuarios", primaryjoin="and_(Actividades.responsableID==Usuarios.id) ")
+    clases = db.relationship('Clases', passive_deletes=True)

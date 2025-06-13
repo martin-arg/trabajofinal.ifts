@@ -1,11 +1,11 @@
-import app
 from flask_login import UserMixin
+from extensiones import db
 
 
-class Usuarios(UserMixin, app.db.Model):
-    id = app.db.Column(app.db.Integer, primary_key=True)
-    usuario = app.db.Column(app.db.String(100))
-    clave = app.db.Column(app.db.String(100))
-    rol = app.db.Column(app.db.String(100))
-    nombre = app.db.Column(app.db.String(100))
-    apellido = app.db.Column(app.db.String(100))
+class Usuarios(UserMixin, db.Model):  # ✅ correcto
+    id = db.Column(db.Integer, primary_key=True)
+    usuario = db.Column(db.String(100))
+    clave = db.Column(db.String(100))
+    rol = db.Column(db.String(100))
+    nombre = db.Column(db.String(100))
+    apellido = db.Column(db.String(100))

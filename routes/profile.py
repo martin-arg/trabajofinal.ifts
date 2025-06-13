@@ -1,8 +1,7 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash
-
 from models.actividades import Actividades
 from models.socios import Socios
-import app
+from extensiones import db, ma
 from models.usuarios import Usuarios
 
 profile = Blueprint('profile', __name__)
@@ -21,8 +20,8 @@ def socios_crear():
     dni = request.form.get('dni')
     email = request.form.get('email')
     new_socio = Socios(nombre, dni, email)
-    app.db.session.add(new_socio)
-    app.db.session.commit()
+    db.session.add(new_socio)
+    db.session.commit()
     return render_template('views/createSocios.html')
 
 
@@ -33,7 +32,7 @@ def socios_modificar(id):
         socio.name = request.form["name"]
         socio.email = request.form["email"]
         socio.dni = request.form["dni"]
-        app.db.session.commit()
+        db.session.commit()
         flash('Contact updated successfully!')
         return redirect(url_for('profile.socios_listar'))
     return render_template('views/modificarSocios.html', socio=socio)
@@ -42,8 +41,8 @@ def socios_modificar(id):
 @profile.route('/sociosborrar/<id>')
 def socios_borrar(id):
     socio = Socios.query.get(id)
-    app.db.session.delete(socio)
-    app.db.session.commit()
+    db.session.delete(socio)
+    db.session.commit()
     return redirect(url_for('profile.socios_listar'))
 
 
