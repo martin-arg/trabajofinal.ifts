@@ -1,0 +1,30 @@
+{%  include 'includes/head.html' %}
+    <title>Socios</title>
+{% include 'includes/header.html' %}
+<main >
+    <h1> Socios</h1>
+
+<table class="table">
+ <thead>
+<tr table class="table-success">
+    <th>Nombre</th>
+    <th>DNI</th>
+    <th>Email</th>
+    <th>Modificar</th>
+    <th>Borrar</th>
+</tr>
+<tbody class="table-group-divider">
+{%  for Socios in listaSocios %}
+<tr class="table-warning">
+<td>{{ Socios.name }}</td>
+<td>{{ Socios.dni }}</td>
+<td>{{ Socios.email }}</td>
+<td class="text-bg-danger"><a href="{{ url_for('profile.socios_modificar', id=Socios.socioID) }}">Modificar Socio</a></td>
+<td class="text-bg-danger"><a href="{{ url_for('profile.socios_borrar', id=Socios.socioID) }}">Borrar Usuario</a></td>
+</tr>
+{% endfor %}
+</tbody>
+ </thead>
+</table>
+    </main>
+{% include 'includes/footer.html' %}

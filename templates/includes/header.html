@@ -1,0 +1,32 @@
+    </head>
+<body>
+<header>
+        <img class="logo" src="../../static/img/icono.svg" alt="icono.svg">
+        {% if not current_user.is_authenticated %}
+        <nav>
+
+            <ul class="nav_links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/actividades">Actividades</a></li>
+                <li><a href="/instalaciones">Instalaciones</a></li>
+                <li><a href="/contacto">Contactenos</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+        {% endif %}
+{% if current_user.is_authenticated %}
+        <nav>
+
+            <ul class="nav_links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/actividades">Actividades</a></li>
+                <li><a href="/instalaciones">Instalaciones</a></li>
+                <li><a href="/contacto">Contactenos</a></li>
+                <li><a href="/profile">Panel de control</a></li>
+                <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
+            </ul>
+        </nav>
+ {% endif %}
+
+    </header>
+

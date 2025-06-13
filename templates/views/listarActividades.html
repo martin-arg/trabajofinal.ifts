@@ -1,0 +1,30 @@
+{%  include 'includes/head.html' %}
+    <title>Actividades</title>
+{% include 'includes/header.html' %}
+<main >
+    <h1> Actividades</h1>
+
+<table class="table">
+ <thead>
+<tr table class="table-success">
+    <th>Actividad</th>
+    <th>Responsable</th>
+    <th>Dias</th>
+    <th>Horarios</th>
+    <th>Cant Max</th>
+</tr>
+<tbody class="table-group-divider">
+{%  for Actividades in listaActividades %}
+<tr class="table-warning">
+<td>{{ Actividades.actividad }}</td>
+<td>{{ Actividades.responsableID }}</td>
+<td>{{ Actividades.dias }}</td>
+<td>{{ Actividades.horario }}</td>
+<td>{{ Actividades.asistentesMax }}</td>
+</tr>
+{% endfor %}
+</tbody>
+ </thead>
+</table>
+    </main>
+{% include 'includes/footer.html' %}
