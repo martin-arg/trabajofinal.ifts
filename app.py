@@ -27,11 +27,9 @@ def load_user(user_id):
 
 # Registrar rutas
 import routes.principal
-import routes.auth
 import routes.profile
 
 app.register_blueprint(routes.principal.principal)
-app.register_blueprint(routes.auth.auth)
 app.register_blueprint(routes.profile.profile)
 
 if __name__ == '__main__':
