@@ -24,11 +24,6 @@ def instalaciones():
     return render_template('instalaciones.html')
 
 
-@principal.route('/login')
-def login():
-    return render_template('login.html')
-
-
 @principal.route('/profile')
 @login_required
 def profile():
