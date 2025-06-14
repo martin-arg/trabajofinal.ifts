@@ -13,7 +13,7 @@ def create_app():
     from . import crud
     from . import stats
 
-    # Registrar blueprints
+    from .routes import crud, stats
     app.register_blueprint(crud.bp)
     app.register_blueprint(stats.bp)
 

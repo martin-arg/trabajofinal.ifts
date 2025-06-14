@@ -2,7 +2,6 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Centro Cultural{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
@@ -10,10 +9,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/">Inicio</a></li>
-                <li><a href="/reservas">Reservas</a></li>
-                <li><a href="/estadisticas">Gráficos</a></li>
-                <li><a href="/funciones">Funciones</a></li>
+                <li><a href="{{ url_for('crud.index') }}">Inicio</a></li>
+                <li><a href="{{ url_for('crud.reservas') }}">Reservas</a></li>
+                <li><a href="{{ url_for('stats.estadisticas') }}">Estadísticas</a></li>
+                <li><a href="#">Funciones</a></li>
             </ul>
         </nav>
     </header>
@@ -23,7 +22,7 @@
     </main>
 
     <footer>
-        <p>© 2025 Centro Cultural - Proyecto Académico</p>
+        <p>Trabajo final &copy; 2025</p>
     </footer>
 </body>
 </html>

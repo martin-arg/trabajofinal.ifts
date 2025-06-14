@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Inicio</title>
-</head>
-<body>
-    <h1>Bienvenido al sistema de reservas</h1>
-    <p>Esta es la página de inicio.</p>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+    <h1>Bienvenido al Sistema de Gestión de Reservas</h1>
+    <p>Utilizá el menú superior para acceder a las distintas funciones del sistema:</p>
+    <ul>
+        <li><a href="{{ url_for('crud.reservas') }}">📋 Reservas</a></li>
+        <li><a href="{{ url_for('stats.estadisticas') }}">📊 Estadísticas</a></li>
+        <li><a href="#">⚙️ Funciones varias</a> (próximamente)</li>
+    </ul>
+{% endblock %}

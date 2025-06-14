@@ -3,11 +3,11 @@ from app.models import db, Reserva
 
 bp = Blueprint('crud', __name__)
 
-@crud_bp.route('/')
+@bp.route('/')
 def index():
     return render_template('index.html')
 
-@crud_bp.route('/reservas', methods=['GET', 'POST'])
+@bp.route('/reservas', methods=['GET', 'POST'])
 def reservas():
     if request.method == 'POST':
         # Alta nueva reserva
@@ -36,7 +36,7 @@ def reservas():
     return render_template('reservas.html', reservas=reservas)
 
 
-@crud_bp.route('/reservas/editar/<int:id>', methods=['GET', 'POST'])
+@bp.route('/reservas/editar/<int:id>', methods=['GET', 'POST'])
 def editar_reserva(id):
     reserva = Reserva.query.get_or_404(id)
     if request.method == 'POST':
@@ -50,7 +50,7 @@ def editar_reserva(id):
     return render_template('editar_reserva.html', reserva=reserva)
 
 
-@crud_bp.route('/reservas/borrar/<int:id>', methods=['POST'])
+@bp.route('/reservas/borrar/<int:id>', methods=['POST'])
 def borrar_reserva(id):
     reserva = Reserva.query.get_or_404(id)
     db.session.delete(reserva)
