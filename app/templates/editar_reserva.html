@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar Reserva{% endblock %}
+
+{% block content %}
+<h1>Editar Reserva</h1>
+
+<form method="post">
+    <label for="cliente_id">Cliente ID:</label>
+    <input type="number" name="cliente_id" value="{{ reserva.cliente_id }}" required><br>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" name="fecha" value="{{ reserva.fecha }}" required><br>
+
+    <label for="habitacion">Habitación:</label>
+    <input type="number" name="habitacion" value="{{ reserva.habitacion }}" required><br>
+
+    <label for="duracion">Duración (días):</label>
+    <input type="number" name="duracion" value="{{ reserva.duracion }}" required><br>
+
+    <button type="submit">Guardar Cambios</button>
+    <a href="{{ url_for('crud.reservas') }}">Cancelar</a>
+</form>
+{% endblock %}

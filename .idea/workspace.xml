@@ -5,62 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30dc4f64-a0ca-4d1c-baa7-fef9055c9682" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/estructura.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extensiones.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/actividades.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/clases.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/socios.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/usuarios.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/principal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/profile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmp/bingo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmp/niños.cantando.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmp/niños.jugando.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/bingo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/boxeo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/bricolage.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/clubLectura.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/comunidad.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/danza.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/icono.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/icono.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/karate.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/newcom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/niños.cantando.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/niños.jugando.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/pintura.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/streching.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/yoga.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/actividades.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contacto.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/head.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/includes/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/instalaciones.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/views/createSocios.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/views/listarActividades.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/views/listarClases.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/views/listarSocios.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/views/listarUsuarios.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/views/logueado.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/views/modificarSocios.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/views/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/views/socios.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wsgi.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/crud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/routes/stats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/editar_reserva.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/reservas.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reservas_clientes.db" beforeDir="false" afterPath="$PROJECT_DIR$/instance/reservas_clientes.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="Python Script" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -92,11 +54,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "Flask server.Flask (app.py).executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.run.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/trabajofinal.ifts",
@@ -105,7 +71,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -116,6 +82,11 @@
         <option name="myModuleName" value="crud-final-python" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\trabajofinal.ifts\instance" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -138,6 +109,7 @@
       <workItem from="1749860167112" duration="1332000" />
       <workItem from="1749861559551" duration="151000" />
       <workItem from="1749871328303" duration="6773000" />
+      <workItem from="1749909081829" duration="3191000" />
     </task>
     <servers />
   </component>
@@ -146,5 +118,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/trabajofinal_ifts$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1749875727511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/trabajofinal_ifts$run.coverage" NAME="run Coverage Results" MODIFIED="1749914263810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

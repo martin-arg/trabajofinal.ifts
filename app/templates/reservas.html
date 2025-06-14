@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}Reservas{% endblock %}
+
+{% block content %}
+<h1>Gestión de Reservas</h1>
+
+<!-- 🔍 Formulario de búsqueda -->
+<form method="get" action="{{ url_for('crud.reservas') }}">
+    <input type="text" name="cliente_id" placeholder="Buscar por Cliente ID">
+    <button type="submit">Buscar</button>
+</form>
+
+<!-- 📝 Formulario para nueva reserva -->
+<h2>Nueva Reserva</h2>
+<form method="post" action="{{ url_for('crud.reservas') }}">
+    <input type="number" name="cliente_id" placeholder="Cliente ID" required>
+    <input type="date" name="fecha" required>
+    <input type="number" name="habitacion" placeholder="Habitación" required>
+    <input type="number" name="duracion" placeholder="Duración (días)" required>
+    <button type="submit">Agregar Reserva</button>
+</form>
+
+<!-- 📋 Listado de reservas -->
+<h2>Listado</h2>
+<table border="1" cellpadding="5">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Cliente</th>
+            <th>Fecha</th>
+            <th>Habitación</th>
+            <th>Duración</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for r in reservas %}
+        <tr>
+            <td>{{ r.id }}</td>
+            <td>{{ r.cliente_id }}</td>
+            <td>{{ r.fecha }}</td>
+            <td>{{ r.habitacion }}</td>
+            <td>{{ r.duracion }}</td>
+            <td>
+                <a href="{{ url_for('crud.editar_reserva', id=r.id) }}">✏️</a>
+                <form method="post" action="{{ url_for('crud.borrar_reserva', id=r.id) }}" style="display:inline;">
+                    <button type="submit" onclick="return confirm('¿Borrar esta reserva?')">🗑️</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
