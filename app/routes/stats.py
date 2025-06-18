@@ -42,7 +42,14 @@ def histograma_duracion():
     } for r in reservas])
 
     fig, ax = plt.subplots()
-    df["duracion"].plot(kind='hist', bins=10, ax=ax)
+    df["duracion"].plot(
+        kind='hist',
+        bins=10,
+        ax=ax,
+        rwidth=0.8,
+        color='salmon',
+        edgecolor='black'
+    )
     ax.set_title("Histograma de duración de reservas")
     ax.set_xlabel("Duración (días)")
     ax.set_ylabel("Frecuencia")
@@ -180,7 +187,14 @@ def grafico_completo():
     axs[1, 0].tick_params(axis='x', rotation=45)
 
     # Histograma
-    duraciones.plot(kind="hist", bins=10, ax=axs[1, 1])
+    df["duracion"].plot(
+        kind='hist',
+        bins=10,
+        ax=axs[1, 1],
+        rwidth=0.8,
+        color='salmon',
+        edgecolor='black'
+    )
     axs[1, 1].set_title("Duración de reservas")
     axs[1, 1].set_xlabel("Días")
     axs[1, 1].set_ylabel("Frecuencia")
