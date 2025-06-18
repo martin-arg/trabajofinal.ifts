@@ -10,8 +10,9 @@ def create_app():
 
     db.init_app(app)
 
-    from .routes import crud, stats
+    from .routes import crud, stats, funciones
     app.register_blueprint(crud.bp)
     app.register_blueprint(stats.bp)
+    app.register_blueprint(funciones.bp)
 
     return app

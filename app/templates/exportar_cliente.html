@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Exportar Cliente{% endblock %}
+
+{% block content %}
+<h1>Exportar reserva por cliente ID</h1>
+<form method="post">
+    <input type="text" name="cliente_id" placeholder="Ingrese cliente ID" required>
+    <button type="submit">Exportar</button>
+</form>
+{% endblock %}

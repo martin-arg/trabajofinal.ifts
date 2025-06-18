@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Funciones Varias{% endblock %}
+
+{% block content %}
+    <h1>Funciones Varias</h1>
+    <ul>
+        <li><a href="{{ url_for('funciones.cargar_datos_de_prueba') }}">📥 Cargar 100 reservas de prueba</a></li>
+        <li><a href="{{ url_for('funciones.exportar_cliente') }}">📤 Exportar cliente por ID (JSON)</a></li>
+    </ul>
+{% endblock %}
