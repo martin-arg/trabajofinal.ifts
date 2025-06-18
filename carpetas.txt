@@ -1,0 +1,7 @@
+app // donde se gurda la aplicacion
+	routes // aca se guarda las rutas a los distintos endpoints en este programa tambien se guarda la logica de la aplicacion.
+	static // archivos estaticos (css, js, imagenes, etc)
+	templates // aca se guardan los html
+    __init__.py // es de donde se inicia realamente la aplicacion
+    models.py // se carga la base de datos usando un orm
+instance //se guarda la base de datos

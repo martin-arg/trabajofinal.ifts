@@ -4,5 +4,9 @@
 
 {% block content %}
     <h1>Estadísticas</h1>
-    <p>Esta sección mostrará próximamente gráficos y datos estadísticos sobre las reservas registradas.</p>
+    <ul>
+        <li><a href="{{ url_for('stats.grafico_barras') }}" target="_blank">📊 Habitaciones más reservadas (barras)</a></li>
+        <li><a href="{{ url_for('stats.histograma_duracion') }}" target="_blank">📈 Histograma de duración de estadías</a></li>
+        <li><a href="{{ url_for('stats.torta_por_planta') }}" target="_blank">🥧 Distribución por planta (torta)</a></li>
+    </ul>
 {% endblock %}
