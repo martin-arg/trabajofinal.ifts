@@ -7,6 +7,9 @@ import os
 
 bp = Blueprint('funciones', __name__)
 
+##### Llama a las paginas de funciones
+
+
 @bp.route('/funciones')
 def index_funciones():
     return render_template('funciones.html')

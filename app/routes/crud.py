@@ -7,7 +7,11 @@ bp = Blueprint('crud', __name__)
 def index():
     return render_template('index.html')
 
-@bp.route('/reservas', methods=['GET', 'POST'])
+#################################################################
+################## Modificaciones a los registros ###############
+#################################################################
+
+@bp.route('/reservas', methods=['GET', 'POST'])  # muestra el listado de registros
 def reservas():
     if request.method == 'POST':
         # Alta nueva reserva
@@ -36,7 +40,7 @@ def reservas():
     return render_template('reservas.html', reservas=reservas)
 
 
-@bp.route('/reservas/editar/<int:id>', methods=['GET', 'POST'])
+@bp.route('/reservas/editar/<int:id>', methods=['GET', 'POST']) # Para editar un registro
 def editar_reserva(id):
     reserva = Reserva.query.get_or_404(id)
     if request.method == 'POST':
@@ -50,7 +54,7 @@ def editar_reserva(id):
     return render_template('editar_reserva.html', reserva=reserva)
 
 
-@bp.route('/reservas/borrar/<int:id>', methods=['POST'])
+@bp.route('/reservas/borrar/<int:id>', methods=['POST']) # Para borrar un registro
 def borrar_reserva(id):
     reserva = Reserva.query.get_or_404(id)
     db.session.delete(reserva)

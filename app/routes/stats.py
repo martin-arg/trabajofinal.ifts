@@ -6,6 +6,7 @@ from app.models import db, Reserva
 
 bp = Blueprint('stats', __name__)
 
+##### Llama a la paginas y a los graficos
 
 @bp.route('/estadisticas')
 def estadisticas():
